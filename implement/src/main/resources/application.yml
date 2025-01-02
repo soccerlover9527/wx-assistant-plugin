@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: base
+wx-assistant-plugin:
+  mqtt:
+    clients:
+      - username:
+        password:
+        urls:
+          - tcp://127.0.0.1:9999
+        random-client-id: true
+        topics:
+          - topic: message
+            qos: 1
+        reply-topics:
+          - command

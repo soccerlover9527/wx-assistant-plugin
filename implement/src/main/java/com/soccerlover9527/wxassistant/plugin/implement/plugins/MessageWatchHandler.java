@@ -26,7 +26,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * @author like
  */
-@Service
+//@Service
+@Deprecated
 @WxAssistantPlugin("reply-and-bad-words")
 public class MessageWatchHandler implements IWxMessageHandler {
     private final Logger log = LoggerFactory.getLogger(MessageWatchHandler.class);

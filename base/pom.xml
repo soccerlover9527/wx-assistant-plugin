@@ -31,8 +31,12 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.version}</version>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.18.2</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -77,10 +81,10 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.graalvm.buildtools</groupId>-->
-<!--                <artifactId>native-maven-plugin</artifactId>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.graalvm.buildtools</groupId>-->
+            <!--                <artifactId>native-maven-plugin</artifactId>-->
+            <!--            </plugin>-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

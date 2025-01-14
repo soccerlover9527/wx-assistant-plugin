@@ -58,7 +58,7 @@ public class MqttClientWrapper implements IClientWrapper {
             mqttClient.setCallback(new MqttCallback() {
                 @Override
                 public void connectionLost(Throwable cause) {
-                    log.error("Mqtt connection lost.", cause);//    盐须
+                    log.error("Mqtt connection lost.", cause);
                 }
 
                 @Override

@@ -19,12 +19,12 @@ public class DirtyWorkHandlerTest {
 
     @BeforeClass
     public void init() {
-        dirtyWordMessageHandler = new DirtyWordMessageHandler();
+        dirtyWordMessageHandler = new DirtyWordMessageHandler(null);
     }
 
     public void test() {
         var message = new Message();
-        message.setContent("草泥马,吉尔，几把");
+        message.setContent("草泥马,吉尔，几把,你他吗的,word妈的");
         var response = dirtyWordMessageHandler.onMessage(message);
         Assert.assertNotNull(response);
         log.info("response: {}", response);

@@ -47,7 +47,7 @@ public class MessageRepeaterHandler implements IWxMessageHandler {
                 cache.put(msgUId, holder);
             }
         } else {
-            int messageCount = holder.counter().getAndIncrement();
+            int messageCount = holder.counter().incrementAndGet();
             //  1. only repeat message when message count is 2 or 2 minutes later.
             //  2. just repeat once.
             if (messageCount == 2 || System.currentTimeMillis() - holder.timestamp.get() > repeatSelfDelay) {

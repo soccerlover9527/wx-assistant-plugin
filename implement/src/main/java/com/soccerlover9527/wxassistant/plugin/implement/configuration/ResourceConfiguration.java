@@ -11,6 +11,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Getter
 public class ResourceConfiguration {
-    @Value("${wx-assistant-plugin.resources.path}")
+//    @Value("${wx-assistant-plugin.resources.path}")
     public String resourcePath;
 }

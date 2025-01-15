@@ -7,12 +7,14 @@ import com.soccerlover9527.wxassistant.plugin.base.core.WxAssistantResponse;
 import com.soccerlover9527.wxassistant.plugin.base.core.message.Message;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 /**
  * @author soccerlover9527@gmail.com
  */
 @WxAssistantPlugin("message-print")
 @Slf4j
+@Component
 public class MessagePrintHandler implements IWxMessageHandler {
     private final ObjectMapper objectMapper;
 

@@ -1,0 +1,9 @@
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', '我上早八', 1) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', '草泥马', 1) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', '鸡儿', 1) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', 'nima', 2) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', 'caonima', 2) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', 'rinima', 2) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', 'rima', 2) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', 'jier', 2) ON CONFLICT (term) do nothing;
+INSERT INTO term (active, created_at, created_by, term, type) VALUES (1, '1737729095000', 'soccerlover_', 'tamade', 2) ON CONFLICT (term) do nothing;

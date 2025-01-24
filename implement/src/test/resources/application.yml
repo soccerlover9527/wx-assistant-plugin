@@ -1,6 +1,12 @@
 spring:
   application:
     name: base
+  jpa:
+    generate-ddl: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:/data/db/wx-assistant-plugin.db
 wx-assistant-plugin:
   mqtt:
     clients:

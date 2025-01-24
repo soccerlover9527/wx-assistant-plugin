@@ -3,8 +3,7 @@ spring:
     name: wx-assistant-plugin
   datasource:
     driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:db/wx-assistant-plugin.db
-    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:sqlite:/data/db/wx-assistant-plugin.db
 wx-assistant-plugin:
   mqtt:
     clients:

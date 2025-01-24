@@ -2,7 +2,10 @@
 package com.soccerlover9527.wxassistant.plugin.implement.repo;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -12,8 +15,12 @@ import java.time.LocalDateTime;
  * @author Coulson.He@tdsynnex.com
  * @since 2025-01-15
  */
-@Table(schema = "term")
+@Table(name = "term")
 @Data
+@Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Term {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

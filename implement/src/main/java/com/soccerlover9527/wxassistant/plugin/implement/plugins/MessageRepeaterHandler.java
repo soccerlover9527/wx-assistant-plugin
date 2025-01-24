@@ -43,7 +43,7 @@ public class MessageRepeaterHandler implements IWxMessageHandler {
         var holder = cache.getIfPresent(msgUId);
         if (holder == null) {
             synchronized (cache) {
-                holder = new MessageRecordHolder(new AtomicLong(System.currentTimeMillis()), new AtomicInteger(1));
+                holder = new MessageRecordHolder(new AtomicLong(System.currentTimeMillis()), new AtomicInteger(0));
                 cache.put(msgUId, holder);
             }
         } else {

@@ -38,11 +38,11 @@ public class MessageRepeaterHandlerTest {
     @Test
     public void testRepeatIsolateGroup() {
         var message = new Message();
-        message.setGid("g1");
+        message.setGid("g2");
         message.setContent("test2");
 
         var message1 = new Message();
-        message1.setGid("g2");
+        message1.setGid("g3");
         message1.setContent("test2");
         var wxAssistantResponse = handler.onMessage(message);
         var wxAssistantResponse1 = handler.onMessage(message);
@@ -57,7 +57,7 @@ public class MessageRepeaterHandlerTest {
     public void testRepeatAfterDelay() {
         handler.setRepeatSelfDelay(3000L);
         var message = new Message();
-        message.setGid("g1");
+        message.setGid("g4");
         message.setContent("test3");
 
         var wxAssistantResponse = handler.onMessage(message);

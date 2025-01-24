@@ -20,7 +20,7 @@ import java.util.concurrent.atomic.AtomicLong;
 /**
  * @author soccerlover9527@gmail.com
  */
-//@Component
+@Component
 @Setter
 @WxAssistantPlugin("repeater")
 public class MessageRepeaterHandler implements IWxMessageHandler {

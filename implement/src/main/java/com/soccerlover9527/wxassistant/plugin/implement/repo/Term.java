@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 /**
  * <p></p>
  *
- * @author Coulson.He@tdsynnex.com
+ * @author soccerlover9527@gmail.com
  * @since 2025-01-15
  */
 @Table(name = "term")

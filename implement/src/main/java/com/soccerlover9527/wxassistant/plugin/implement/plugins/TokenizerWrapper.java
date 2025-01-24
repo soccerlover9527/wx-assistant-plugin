@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 /**
  * <p></p>
  *
- * @author Coulson.He@tdsynnex.com
+ * @author soccerlover9527@gmail.com
  * @since 2025-01-24
  */
 @Component
